@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -18,5 +18,63 @@
     
     <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2424125/charts/6?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=Carbon Monoxide&type=line"></iframe>
 
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mine Environment Sensor Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+        }
+        .sidebar {
+            width: 250px;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+        .main-content {
+            flex-grow: 1;
+            padding: 20px;
+        }
+        .iframe-container {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Menu</h2>
+            <h3>Live Data</h3>
+            <h3>Prediction Model</h3>
+        </div>
+        <div class="main-content">
+            <h1>Mine Environment Sensor Dashboard</h1>
+            <div class="iframe-container">
+                <h2>Live Data</h2>
+                <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2424125/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=Humidity&type=line"></iframe>
+                <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2424125/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=Temperature&type=line"></iframe>
+                <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2424125/charts/3?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=CO&type=line"></iframe>
+                <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2424125/charts/4?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=Smoke&type=line"></iframe>
+                <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2424125/charts/5?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=Methane&type=line"></iframe>
+                <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2424125/charts/6?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=Carbon Monoxide&type=line"></iframe>
+            </div>
+            <div class="device-details">
+                <h2>Device Details</h2>
+                <p><strong>Device MAC Address:</strong> XXXXXXXX</p>
+                <p><strong>Unique ID:</strong> XXXXXXXX</p>
+                <p><strong>Location:</strong> Mine XYZ</p>
+                <p><strong>Date of Install:</strong> January 1, 2024</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
